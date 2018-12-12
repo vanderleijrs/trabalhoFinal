@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Ruas</title>
+			<link rel ="shortcut icon" href = "images/favicon.png" type = "image/x-png"/>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<link rel="stylesheet" href="css.css" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+			<script src="js/js1.js"></script>
+			<script src="js/js2.js"></script>
+			<script src="js/js3.js"></script>
+			<script src="js/js4.js"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Projeto Saber</a>
+		</header>
+    	<!-- Menu -->
+		<nav class="navbar navbar-inverse" style="background-color:#f0f5f5" border-color="#f0f5f5"  >
+            <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					<li><a href="index.html">Página Inicial</a></li>
+					<li><a href="ruas.html">Ruas</a></li>
+					<li><a href="assaltos.html">Assaltos</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+				  </ul>
+				</div>
+			  </div>
+        </nav>
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+		        <div class ="formulario">
+					<form name="rua" method="POST" action="conecta_procura.php">
+					    <h1>Pesquise para ver os problemas da sua rua</h1>
+						<div class="col-md-8">
+								<div class="form-group" >
+									<label>Bairro</label>
+									<select type="text" id="bai"  name="bai" class="form-control" required>					
+										<option value=""></option>
+									</select>							
+								</div>
+						    </div>	
+						<div class="col-md-8">						
+						   <div class="form-group" >
+								<label>Ruas</label>
+								<select type="text" id="ru"  name="proc" class="form-control" required>					
+									<option value=""></option>
+								</select>							
+						   </div>
+					   </div>
+					   <div class="col-md-8">						
+						    <div class="form-group" >
+								<input name="procura" value="Procurar" type="submit"><br><br><br><br>
+							</div>
+						</div>							
+					</form><br><br><br><br><!-- FIM DO FORM DE PESQUISA-->
+					    <div class="row">
+					    <form name="rua1" method="POST" action="conecta_rua.php"><!-- FORM DE INSERÇÃO-->
+						<h1>Informe o problema da sua rua</h1>
+						<div class="col-md-8">
+						<div class="form-group" >
+							<label>Bairro</label>
+							<select type="text" id="bairro"  name="bairro" class="form-control" required>					
+								<option value=""></option>
+							</select>							
+					    </div>
+						</div>	
+						<div class="col-md-8">						
+					   <div class="form-group" >
+							<label>Ruas</label>
+							<select type="text" id="rua"  name="rua" class="form-control" required>					
+								<option value=""></option>
+							</select>							
+					   </div>
+					   </div>
+						<div class="col-md-8">						
+					   <div class="form-group" >
+							<label>Tipo de problema</label>
+						<select type= "text" id="prob" name="prob"  placeholder= "Escolha um problema"required>
+						<option value=""></option>
+						  <option value="Buraco na via">Buraco na via</option>
+						  <option value="Calçada quebrada">Calçada quebrada</option>
+						  <option value="Sem asfalto">Sem asfalto</option>
+						  <option value="Boeiro aberto">Bueiro aberto</option>
+						   <option value="Falta iluminação">Falta iluminação</option>
+						</select><br>
+						<input name="insere" value="Enviar" type="submit"><br><br><br><br>
+						</div>
+						</div>
+					</form><!-- FIM DO FORM DE INSERÇÃO-->
+					</div>
+				</div>
+			</section><br><br><br>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<h2>Onde Reclamar</h2>
+					<ul class="actions">
+						<li><span class="icon fa-phone"></span> <a href="#">156 ou 118</a></li>
+						<li><span class="icon fa-envelope"></span> <a href="#">http://www2.portoalegre.rs.gov.br</a></li>
+						<li><span class="icon fa-map-marker"></span> Praça Montevideo, 10 - Centro Histórico, Porto Alegre - RS, cep 90010-170</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; VANDERLEI RODRIGUES
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
